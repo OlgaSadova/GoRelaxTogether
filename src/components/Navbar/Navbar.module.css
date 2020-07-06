@@ -1,0 +1,22 @@
+
+.nav {
+    grid-area: n;
+    background-color: blue;
+    
+    }
+.item{
+    color: gold;
+    margin-left: 10px;
+} 
+.profile{
+    color: silver;
+    margin-left: 10px;
+}   
+.active{
+    color: red;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.message{
+    margin-left: 10px;
+}
