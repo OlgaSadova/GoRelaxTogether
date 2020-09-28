@@ -18,24 +18,24 @@ export default function Dialogs() {
                        {id: 4, name: 'Milana'},
                        {id: 5, name: 'Lina'}
                     ]
+    let messageData = [{id: 1, message: 'Hi'}, 
+                       {id: 2, message: 'What do you like to do?'},
+                       {id: 3, message: 'I love hiking!'},
+                       {id: 4, message: 'Hi, Me too'},
+                       {id: 5, message: 'I hate sport'}
+                    ]
    
     return (
         <div className={classes.dialogs}>
          <div className={classes.dialogsItem}>
-             <DialogItem name='Olga' id='1'/>
-             <DialogItem name='Sergiy' id='2'/>
-             <DialogItem name='Mira' id='3'/>
-             <DialogItem name='Milana' id='4'/>
-             <DialogItem name='Lina' id='5'/>
-             
+             <DialogItem name={dialogsData[0].name} id={dialogsData[0].id}/>
+             <DialogItem name={dialogsData[1].name} id={dialogsData[1].id}/>
+            
         </div>
          <div className={classes.message}>
              <div className={classes.messages}>
-                <MessageItem message='Hi'/>
-                <MessageItem message='What do you like to do?'/>
-                <MessageItem message='I love hiking!'/>
-                <MessageItem message='Hi, Me too'/>
-                <MessageItem message='I hate sport'/>
+                <MessageItem message={messageData[0].message} id={messageData[0].id}/>
+                <MessageItem message={messageData[1].message} id={messageData[1].id}/>
                 
              </div>
          </div>
