@@ -12,6 +12,13 @@ const MessageItem = (props)=>{
    
 }
 export default function Dialogs() {
+    let dialogsData = [{id: 1, name: 'Olga'}, 
+                       {id: 2, name: 'Sergiy'},
+                       {id: 3, name: 'Mira'},
+                       {id: 4, name: 'Milana'},
+                       {id: 5, name: 'Lina'}
+                    ]
+   
     return (
         <div className={classes.dialogs}>
          <div className={classes.dialogsItem}>
