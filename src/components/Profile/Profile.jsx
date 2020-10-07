@@ -3,7 +3,8 @@ import classes from './Profile.module.css';
 import Posts from './Myposts/Posts.jsx';
 import ProfileInfo from './ProfileInfo/ProfileInfo';
 
-export default function Profile() {
+export default function Profile(props) {
+  
     return ( <div>
        
         
@@ -14,7 +15,7 @@ export default function Profile() {
             <ProfileInfo/>
         </div>
      <div>
-     <Posts/>
+     <Posts posts={props.posts}/>
      </div>
      </div>
      
