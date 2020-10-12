@@ -11,12 +11,12 @@ import  classes from './Dialogs.module.css';
 export default function Dialogs(props) {
     
 
-    let dialogsElements = props.dialogs.map(dialog =>  <DialogItem name={dialog.name} id={dialog.id}/>);
+    let dialogsElements = props.state.dialogs.map(dialog =>  <DialogItem name={dialog.name} id={dialog.id}/>);
    
    
    
                     
-    let messageElements = props.messages.map(message =>  <MessageItem message={message.message} id={message.id}/>);  
+    let messageElements = props.state.messages.map(message =>  <MessageItem message={message.message} id={message.id}/>);  
    
     return (
         <div className={classes.dialogs}>

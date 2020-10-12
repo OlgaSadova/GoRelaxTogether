@@ -15,7 +15,7 @@ export default function Profile(props) {
             <ProfileInfo/>
         </div>
      <div>
-     <Posts posts={props.posts}/>
+     <Posts posts={props.state.posts}/>
      </div>
      </div>
      
